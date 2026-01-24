@@ -1,0 +1,123 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Container principal */
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+form input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+form input:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Botão de adicionar */
+form button {
+    padding: 12px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    background-color: #5848c2;
+}
+
+/* Lista de produtos */
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 12px 15px;
+    background-color: #f9f9fc;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+ul li:hover {
+    background-color: #ececff;
+}
+
+/* Botão de excluir */
+button.excluir {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+button.excluir:hover {
+    background-color: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    form input, form button {
+        font-size: 14px;
+    }
+
+    button.excluir {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
