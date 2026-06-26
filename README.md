@@ -21,6 +21,6 @@ Este é um projeto simples de gerenciamento de produtos usando **Flask** e **SQL
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/projeto_produtos_flask.git
+   git clone https://github.com/seu-usuario/projeto_produtos.git
    cd projeto_produtos_flask
 
